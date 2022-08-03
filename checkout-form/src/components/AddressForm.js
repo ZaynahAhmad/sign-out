@@ -80,7 +80,7 @@ export default function AddressForm() {
             required
             id="zip"
             name="zip"
-            label="Zip / Postal code"
+            label="Zip Code"
             fullWidth
             autoComplete="shipping postal-code"
             variant="standard"
@@ -99,7 +99,7 @@ export default function AddressForm() {
         </Grid>
         <Grid item xs={12}>
           <FormControlLabel
-            control={<Checkbox color="" name="saveAddress" value="yes" />}
+            control={<Checkbox color="primary" name="saveAddress" value="yes" />}
             label="Use this address for payment details"
           />
         </Grid>
