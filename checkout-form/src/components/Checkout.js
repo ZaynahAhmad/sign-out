@@ -15,6 +15,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
+import '../App.css';
+
 
 
 
@@ -73,8 +75,11 @@ export default function Checkout() {
       >
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
-            Company name
+            Online Walmart Shopping
           </Typography>
+          <div className= "image"> <img src="https://cutewallpaper.org/21/walmart-logo-transparent-background/Walmart-Logo-LogoDix.png" height="80" width="100"></img>,
+        
+        </div>
         </Toolbar>
       </AppBar>
       <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
@@ -96,7 +101,7 @@ export default function Checkout() {
                   Thank you for your order.
                 </Typography>
                 <Typography variant="subtitle1">
-                  Your order number is #2001539. We have emailed your order
+                  Your order number is #65289. We have emailed your order
                   confirmation, and will send you an update when your order has
                   shipped.
                 </Typography>
