@@ -20,6 +20,7 @@ export default function PaymentForm() {
             fullWidth
             autoComplete="cc-name"
             variant="standard"
+            color="secondary"
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -30,6 +31,7 @@ export default function PaymentForm() {
             fullWidth
             autoComplete="cc-number"
             variant="standard"
+            color="secondary"
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -40,6 +42,7 @@ export default function PaymentForm() {
             fullWidth
             autoComplete="cc-exp"
             variant="standard"
+            color="secondary"
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -51,6 +54,7 @@ export default function PaymentForm() {
             fullWidth
             autoComplete="cc-csc"
             variant="standard"
+            color="secondary"
           />
         </Grid>
         <Grid item xs={12}>

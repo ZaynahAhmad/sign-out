@@ -33,9 +33,9 @@ function Copyright() {
   );
 }
 
-const steps = ['Shipping address', 'Payment details', 'Review your order'];
+const steps = ['Shipping address', 'Payment details', 'Review your order']
 
-function getStepContent(step) {
+function getStepContent(step) { 
   switch (step) {
     case 0:
       return <AddressForm />;
@@ -45,6 +45,7 @@ function getStepContent(step) {
       return <Review />;
     default:
       throw new Error('Unknown step');
+      
   }
 }
 
@@ -85,7 +86,7 @@ export default function Checkout() {
       <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
         <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
           <Typography component="h1" variant="h4" align="center">
-            Checkout!
+            Walmart Checkout!
           </Typography>
           <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
             {steps.map((label) => (
@@ -111,7 +112,7 @@ export default function Checkout() {
                 {getStepContent(activeStep)}
                 <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                   {activeStep !== 0 && (
-                    <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }}>
+                    <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }} color="secondary">
                       Back
                     </Button>
                   )}
@@ -120,6 +121,7 @@ export default function Checkout() {
                     variant="contained"
                     onClick={handleNext}
                     sx={{ mt: 3, ml: 1 }}
+                    color="secondary"
                   >
                     {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
                   </Button>
